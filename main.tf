@@ -7,9 +7,9 @@ provider "aws" {
   region  = "${var.region}"
 }
 
-resource "tls_private_key" "hashicat" {
-  algorithm = "RSA"
-}
+# resource "tls_private_key" "hashicat" {
+#   algorithm = "RSA"
+# }
 
 locals {
   private_key_filename = "${var.prefix}-ssh-key.pem"
